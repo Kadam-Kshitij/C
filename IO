@@ -32,3 +32,11 @@ Write a string to the stdout.
 - fclose -
 int fclose( FILE* )
 Close the file.
+
+- fread -
+fread( void* buff, size_of_each_object, int count, FILE* )
+Returns number of objects read.
+
+- fwrite -
+fwrite( void* buff, size_of_each_object, int count, FILE* )
+Returns number of objects written.
