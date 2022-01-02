@@ -1,0 +1,26 @@
+============ IO ============
+
+- fopen -
+fopen( file_name, mode );
+Opens the specified file.
+Returns pointer to the file stream on success. Else null pointer is returned.
+
+There are various mode in which the file can be opened -
+1) r - read - Open file for reading. Error if file does not exist.
+2) w - write - Open file for writing and create file if not present. If present destroy the contents.
+3) a - append - Write to the end of file.
+4) r+ - Open file for read + write. Error if file not present.
+5) w+ - Open file for read + write. Create file if not present.
+6) a+ - Open file for read + write. Open file and write to the end.
+
+- ftgetc -
+int fgetc( FILE* );
+Read a character from the sprcified FILE stream int the form of int. Can be converted to char.
+
+- putchar -
+int putchar( int );
+Puts a character on stdio.
+
+- fgets -
+char* fgets( char* str, int count, FILE* );
+Read at the most count - 1 characters. Reading will stop if new line or EOF is reached.
