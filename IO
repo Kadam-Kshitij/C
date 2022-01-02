@@ -24,3 +24,11 @@ Puts a character on stdio.
 - fgets -
 char* fgets( char* str, int count, FILE* );
 Read at the most count - 1 characters. Reading will stop if new line or EOF is reached.
+
+- puts -
+int puts( const char* )
+Write a string to the stdout.
+
+- fclose -
+int fclose( FILE* )
+Close the file.
