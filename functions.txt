@@ -1,0 +1,8 @@
+int memcmp ( const void * ptr1, const void * ptr2, size_t num );  // Returns 0 if same
+
+void * memcpy ( void * destination, const void * source, size_t num );  // Undefined behavior if source and destination is overlapping
+
+void * memmove ( void * destination, const void * source, size_t num ); // Safer than memcpy
+
+void * memset ( void * ptr, int value, size_t num );
+
